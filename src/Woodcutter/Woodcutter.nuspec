@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<package>
+  <metadata>
+    <id>Woodcutter</id>
+    <version>$version$</version>
+    <title>Woodcutter</title>
+    <authors>James Craig</authors>
+    <owners>James Craig</owners>
+    <licenseUrl>https://github.com/JaCraig/Woodcutter/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/JaCraig/Woodcutter</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>$description$</description>
+    <copyright>Copyright 2016</copyright>
+    <tags>Logging Logger</tags>
+    <dependencies>
+      <dependency id="NETStandard.Library" version="1.6.0" />
+      <dependency id="Canister.IoC" version="1.0.26" />
+      <dependency id="FileCurator" version="1.0.3" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="bin\Release\netstandard1.1\Woodcutter.dll" target="lib\netstandard1.1\Woodcutter.dll" />
+    <file src="bin\Release\netstandard1.1\Woodcutter.xml" target="lib\netstandard1.1\Woodcutter.xml" />
+  </files>
+</package>

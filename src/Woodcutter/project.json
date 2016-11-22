@@ -1,0 +1,26 @@
+﻿{
+  "title": "Woodcutter",
+  "version": "1.0.0",
+  "authors": [ "James Craig" ],
+  "description": "Woodcutter is a logging library wrapper. It acts as a wrapper around various logging libraries, thus giving them a common interface to deal with.",
+  "packOptions": {
+    "owners": [ "James Craig" ],
+    "summary": "Woodcutter is a simple logging library wrapper.",
+    "projectUrl": "https://github.com/JaCraig/Woodcutter",
+    "licenseUrl": "https://github.com/JaCraig/Woodcutter/blob/master/LICENSE",
+    "tags": [ "Logging", "Logger" ]
+  },
+  "dependencies": {
+    "Canister.IoC": "1.0.26",
+    "NETStandard.Library": "1.6.0",
+    "FileCurator": "1.0.3"
+  },
+  "frameworks": {
+    "netstandard1.1": {
+      "imports": "dnxcore50"
+    }
+  },
+  "buildOptions": {
+    "xmlDoc": true
+  }
+}
