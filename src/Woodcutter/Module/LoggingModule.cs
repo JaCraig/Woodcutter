@@ -15,6 +15,7 @@ limitations under the License.
 */
 
 using Canister.Interfaces;
+using Microsoft.Extensions.DependencyInjection;
 using Woodcutter.Interfaces;
 
 namespace Woodcutter.Module
@@ -39,7 +40,7 @@ namespace Woodcutter.Module
         public void Load(IBootstrapper Bootstrapper)
         {
             Bootstrapper.RegisterAll<ILogger>();
-            Bootstrapper.Register(new Woodcutter(Bootstrapper.ResolveAll<ILogger>()));
+            Bootstrapper.Register<Woodcutter>(ServiceLifetime.Singleton);
         }
     }
 }
