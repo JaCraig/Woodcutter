@@ -16,7 +16,7 @@
   "dependencies": {
     "xunit": "2.2.0-*",
     "Woodcutter": "1.0.*",
-    "FileCurator": "1.0.3",
+    "FileCurator": "1.0.8",
     "dotnet-test-xunit": "2.2.0-*"
   },
   "runtimes": {

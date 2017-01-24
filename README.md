@@ -8,7 +8,9 @@ Woodcutter is a library used to simplify logging on your system. It aims to wrap
 
 The system relies on an IoC wrapper called [Canister](https://github.com/JaCraig/Canister). While Canister has a built in IoC container, it's purpose is to actually wrap your container of choice in a way that simplifies setup and usage for other libraries that don't want to be tied to a specific IoC container. Woodcutter uses it to detect and pull in logging providers. As such you must set up Canister in order to use Woodcutter:
 
-    Canister.Builder.CreateContainer(new List<ServiceDescriptor>(), typeof(Woodcutter).GetTypeInfo().Assembly);
+    Canister.Builder.CreateContainer(new List<ServiceDescriptor>())
+                    .RegisterWoodcutter()
+                    .Build();
 	
 This line is required prior to using the Log class for the first time. Once Canister is set up, you can call the Log class provided:
 
@@ -27,7 +29,10 @@ The system comes with a built in logging system, however it is very basic and yo
 	
 After the classes are created, you must tell Canister where to look for it. So modify the initialization line accordingly:
 
-    Canister.Builder.CreateContainer(new List<ServiceDescriptor>(), typeof(Woodcutter).GetTypeInfo().Assembly, typeof(MyLogger).GetTypeInfo().Assembly);
+    Canister.Builder.CreateContainer(new List<ServiceDescriptor>())
+                    .RegisterWoodcutter()
+					.AddAssembly(typeof(MyLogger).GetTypeInfo().Assembly)
+                    .Build();
 	
 From there the system will find the new provider and use it when called.
 

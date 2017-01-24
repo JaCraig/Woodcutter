@@ -11,9 +11,9 @@
     "tags": [ "Logging", "Logger" ]
   },
   "dependencies": {
-    "Canister.IoC": "1.0.31",
+    "Canister.IoC": "1.0.35",
     "NETStandard.Library": "1.6.1",
-    "FileCurator": "1.0.3"
+    "FileCurator": "1.0.8"
   },
   "frameworks": {
     "netstandard1.1": {
