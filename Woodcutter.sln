@@ -1,20 +1,17 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.26228.9
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{EAB5C3EB-D94A-430C-B2BF-B38F9A2D03BB}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{699A9EF8-F9C2-4D0C-8E31-31D2BBF6D5D4}"
-	ProjectSection(SolutionItems) = preProject
-		global.json = global.json
-	EndProjectSection
-EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Woodcutter", "src\Woodcutter\Woodcutter.xproj", "{C5D7F9B6-FC16-457A-A646-A00BA4586C2B}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{E7791102-932C-4965-9BAD-9B1282260F35}"
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Woodcutter.Tests", "test\Woodcutter.Tests\Woodcutter.Tests.xproj", "{9C4E24D7-39A7-4A63-B6BA-EE33186941F9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Woodcutter", "src\Woodcutter\Woodcutter.csproj", "{C5D7F9B6-FC16-457A-A646-A00BA4586C2B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Woodcutter.Tests", "test\Woodcutter.Tests\Woodcutter.Tests.csproj", "{9C4E24D7-39A7-4A63-B6BA-EE33186941F9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
