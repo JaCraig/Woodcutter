@@ -10,7 +10,7 @@
     <Description>Woodcutter is a logging library wrapper. It acts as a wrapper around various logging libraries, thus giving them a common interface to deal with.</Description>
     <AssemblyTitle>Woodcutter</AssemblyTitle>
     <Authors>James Craig</Authors>
-    <TargetFramework>netstandard1.1</TargetFramework>
+    <TargetFramework>netstandard1.6</TargetFramework>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <AssemblyName>Woodcutter</AssemblyName>
     <PackageId>Woodcutter</PackageId>
@@ -27,8 +27,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Canister.IoC" Version="1.0.42" />
-    <PackageReference Include="FileCurator" Version="1.0.10" />
+    <PackageReference Include="Canister.IoC" Version="1.0.49" />
+    <PackageReference Include="FileCurator" Version="1.1.14" />
   </ItemGroup>
 
 </Project>
