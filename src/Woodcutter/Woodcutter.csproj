@@ -10,25 +10,23 @@
     <Description>Woodcutter is a logging library wrapper. It acts as a wrapper around various logging libraries, thus giving them a common interface to deal with.</Description>
     <AssemblyTitle>Woodcutter</AssemblyTitle>
     <Authors>James Craig</Authors>
-    <TargetFramework>netstandard1.6</TargetFramework>
+    <TargetFramework>netstandard2.0</TargetFramework>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <AssemblyName>Woodcutter</AssemblyName>
     <PackageId>Woodcutter</PackageId>
     <PackageTags>Logging;Logger</PackageTags>
     <PackageProjectUrl>https://github.com/JaCraig/Woodcutter</PackageProjectUrl>
     <PackageLicenseUrl>https://github.com/JaCraig/Woodcutter/blob/master/LICENSE</PackageLicenseUrl>
-    <NetStandardImplicitPackageVersion>1.6.1</NetStandardImplicitPackageVersion>
-    <PackageTargetFallback>$(PackageTargetFallback);dnxcore50</PackageTargetFallback>
     <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
     <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
     <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-    <Version>1.0.$(BuildNumber)</Version>
+    <Version>2.0.$(BuildNumber)</Version>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Canister.IoC" Version="1.0.49" />
-    <PackageReference Include="FileCurator" Version="1.1.14" />
+    <PackageReference Include="Canister.IoC" Version="2.0.0" />
+    <PackageReference Include="FileCurator" Version="2.0.0" />
   </ItemGroup>
 
 </Project>
