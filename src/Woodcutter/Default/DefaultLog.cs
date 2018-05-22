@@ -31,6 +31,8 @@ namespace Woodcutter.Default
         /// <summary>
         /// Constructor
         /// </summary>
+        /// <param name="name">Name of the log</param>
+        /// <param name="directory">The directory.</param>
         public DefaultLog(string name, string directory)
             : base(name, directory)
         {
@@ -48,6 +50,8 @@ namespace Woodcutter.Default
                 + Environment.NewLine;
             Start(this);
         }
+
+        private string _FileName = "";
 
         /// <summary>
         /// File name
@@ -67,8 +71,6 @@ namespace Woodcutter.Default
         /// <summary>
         /// File object that the log uses
         /// </summary>
-        protected FileInfo File { get; private set; }
-
-        private string _FileName = "";
+        protected FileInfo File { get; }
     }
 }

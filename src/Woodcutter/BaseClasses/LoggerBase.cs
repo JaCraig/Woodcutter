@@ -46,7 +46,7 @@ namespace Woodcutter.BaseClasses
         /// <summary>
         /// Called to log the current message
         /// </summary>
-        public IDictionary<string, ILog> Logs { get; private set; }
+        public IDictionary<string, ILog> Logs { get; }
 
         /// <summary>
         /// Name of the logger

@@ -33,9 +33,7 @@ namespace Woodcutter
         /// <param name="loggers">The loggers.</param>
         public Woodcutter(IEnumerable<ILogger> loggers)
         {
-            LoggerUsing = loggers.FirstOrDefault(x => !x.GetType().Namespace.StartsWith("WOODCUTTER", StringComparison.OrdinalIgnoreCase));
-            if (LoggerUsing == null)
-                LoggerUsing = new DefaultLogger();
+            LoggerUsing = loggers.FirstOrDefault(x => !x.GetType().Namespace.StartsWith("WOODCUTTER", StringComparison.OrdinalIgnoreCase)) ?? new DefaultLogger();
         }
 
         /// <summary>

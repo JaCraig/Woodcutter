@@ -36,11 +36,11 @@ namespace Woodcutter.Module
         /// <summary>
         /// Loads the module
         /// </summary>
-        /// <param name="Bootstrapper">Bootstrapper to register with</param>
-        public void Load(IBootstrapper Bootstrapper)
+        /// <param name="bootstrapper">Bootstrapper to register with</param>
+        public void Load(IBootstrapper bootstrapper)
         {
-            Bootstrapper.RegisterAll<ILogger>();
-            Bootstrapper.Register<Woodcutter>(ServiceLifetime.Singleton);
+            bootstrapper.RegisterAll<ILogger>();
+            bootstrapper.Register<Woodcutter>(ServiceLifetime.Singleton);
         }
     }
 }

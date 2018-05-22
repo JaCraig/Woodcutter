@@ -17,8 +17,8 @@ limitations under the License.
 using System;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
-using Woodcutter.HelperFunctions;
 using Woodcutter.Enums;
+using Woodcutter.HelperFunctions;
 using Woodcutter.Interfaces;
 
 namespace Woodcutter.BaseClasses
@@ -60,7 +60,7 @@ namespace Woodcutter.BaseClasses
         /// <summary>
         /// Name of the log
         /// </summary>
-        public string Name { get; private set; }
+        public string Name { get; }
 
         /// <summary>
         /// Called when the log is "closed"
@@ -75,7 +75,7 @@ namespace Woodcutter.BaseClasses
         /// <summary>
         /// Called to log the current message
         /// </summary>
-        protected IDictionary<MessageType, Action<string>> Log { get; private set; }
+        protected IDictionary<MessageType, Action<string>> Log { get; }
 
         /// <summary>
         /// Called when the log is "opened"

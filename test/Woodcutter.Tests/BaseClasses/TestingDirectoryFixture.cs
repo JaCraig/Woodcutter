@@ -2,7 +2,6 @@
 using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Collections.Generic;
-using System.Reflection;
 using Woodcutter.Registration;
 using Xunit;
 
@@ -14,9 +13,12 @@ namespace Woodcutter.Tests.BaseClasses
         public TestingDirectoryFixture()
         {
             if (Canister.Builder.Bootstrapper == null)
+            {
                 Canister.Builder.CreateContainer(new List<ServiceDescriptor>())
-                    .RegisterWoodcutter()
-                    .Build();
+                   .RegisterWoodcutter()
+                   .Build();
+            }
+
             new DirectoryInfo(@".\Testing").Create();
             new DirectoryInfo(@".\App_Data").Create();
             new DirectoryInfo(@".\Logs").Create();

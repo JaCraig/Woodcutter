@@ -31,7 +31,7 @@ namespace Woodcutter
         public static ILog Get(string name = "Default")
         {
             var Manager = Canister.Builder.Bootstrapper.Resolve<Woodcutter>();
-            return Manager == null ? null : Manager.GetLog(name);
+            return Manager?.GetLog(name);
         }
     }
 }

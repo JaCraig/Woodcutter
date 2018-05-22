@@ -46,7 +46,9 @@ namespace Woodcutter.Default
         public override void AddLog(string name = "Default")
         {
             if (!Logs.ContainsKey(name))
+            {
                 Logs.Add(name, new DefaultLog(name, Directory));
+            }
             else
             {
                 Logs[name].Dispose();
