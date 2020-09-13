@@ -25,8 +25,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Canister.IoC" Version="3.0.2" />
-    <PackageReference Include="FileCurator" Version="3.1.5" />
+    <PackageReference Include="Canister.IoC" Version="3.0.4" />
+    <PackageReference Include="FileCurator" Version="3.1.17" />
   </ItemGroup>
 
 </Project>
