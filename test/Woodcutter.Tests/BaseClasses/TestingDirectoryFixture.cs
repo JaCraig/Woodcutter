@@ -1,8 +1,6 @@
 ﻿using FileCurator;
 using Microsoft.Extensions.DependencyInjection;
 using System;
-using System.Collections.Generic;
-using Woodcutter.Registration;
 using Xunit;
 
 namespace Woodcutter.Tests.BaseClasses
@@ -14,9 +12,7 @@ namespace Woodcutter.Tests.BaseClasses
         {
             if (Canister.Builder.Bootstrapper == null)
             {
-                Canister.Builder.CreateContainer(new List<ServiceDescriptor>())
-                   .RegisterWoodcutter()
-                   .Build();
+                new ServiceCollection().AddCanisterModules(x => x.RegisterWoodcutter());
             }
 
             new DirectoryInfo(@".\Testing").Create();

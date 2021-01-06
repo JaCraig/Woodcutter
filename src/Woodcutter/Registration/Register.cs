@@ -15,14 +15,9 @@ limitations under the License.
 */
 
 using Canister.Interfaces;
-using FileCurator.Registration;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Reflection;
-using System.Threading.Tasks;
 
-namespace Woodcutter.Registration
+namespace Microsoft.Extensions.DependencyInjection
 {
     /// <summary>
     /// Registration extension methods
@@ -34,10 +29,10 @@ namespace Woodcutter.Registration
         /// </summary>
         /// <param name="bootstrapper">The bootstrapper.</param>
         /// <returns>The bootstrapper</returns>
-        public static IBootstrapper RegisterWoodcutter(this IBootstrapper bootstrapper)
+        public static ICanisterConfiguration? RegisterWoodcutter(this ICanisterConfiguration? bootstrapper)
         {
-            return bootstrapper.AddAssembly(typeof(Registration).GetTypeInfo().Assembly)
-                               .RegisterFileCurator();
+            return bootstrapper?.AddAssembly(typeof(Registration).GetTypeInfo().Assembly)
+                                .RegisterFileCurator();
         }
     }
 }
