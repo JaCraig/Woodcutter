@@ -1,5 +1,4 @@
 ﻿using FileCurator;
-using Microsoft.Extensions.DependencyInjection;
 using System;
 using Xunit;
 
@@ -10,11 +9,6 @@ namespace Woodcutter.Tests.BaseClasses
     {
         public TestingDirectoryFixture()
         {
-            if (Canister.Builder.Bootstrapper == null)
-            {
-                new ServiceCollection().AddCanisterModules(x => x.RegisterWoodcutter());
-            }
-
             new DirectoryInfo(@".\Testing").Create();
             new DirectoryInfo(@".\App_Data").Create();
             new DirectoryInfo(@".\Logs").Create();
