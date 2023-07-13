@@ -1,6 +1,7 @@
-# WoodCutter
+# This project is archived. It was originally created prior to .Net Core, the common logging framework in .Net now, etc. At this point just use that and tie in your logging framework of choice.
 
-[![Build status](https://ci.appveyor.com/api/projects/status/57oufeuo0t56kg4q?svg=true)](https://ci.appveyor.com/project/JaCraig/woodcutter)
+
+# WoodCutter
 
 Woodcutter is a library used to simplify logging on your system. It aims to wrap logging frameworks and give a constant API to them.
 
